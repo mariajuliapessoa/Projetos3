@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class Projetos3Config(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Projetos3'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "Projetos3"
