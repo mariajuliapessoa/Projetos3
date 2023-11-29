@@ -27,6 +27,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Projetos3.apps.Projetos3Config",
+    "Users.apps.UsersConfig",
+    "Projeto.apps.ProjetoConfig",
+    "Doacao.apps.DoacaoConfig"
 ]
 
 MIDDLEWARE = [
@@ -111,4 +114,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-AUTH_USER_MODEL = 'Projetos3.Users'
+AUTH_USER_MODEL = 'Users.Users'
+'rolepermissions'
