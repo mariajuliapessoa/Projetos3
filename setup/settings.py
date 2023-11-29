@@ -29,7 +29,9 @@ INSTALLED_APPS = [
     "Projetos3.apps.Projetos3Config",
     "Users.apps.UsersConfig",
     "Projeto.apps.ProjetoConfig",
-    "Doacao.apps.DoacaoConfig"
+    "Doacao.apps.DoacaoConfig",
+    "Demanda.apps.DemandaConfig",
+    "Relatorio.apps.RelatorioConfig",
 ]
 
 MIDDLEWARE = [
