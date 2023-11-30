@@ -1,12 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render 
 from rolepermissions.decorators import has_permission_decorator
-from django.contrib.auth import Users
+from django.contrib.auth.models import User
+from .forms import CustomUserCreationForm
+from django.shortcuts import redirect
 
 @has_permission_decorator('cadastrar_Users')
 
 def cadastrar_Users(request):
-	User = Users()
+	Users = Users()
 	if request.method == 'POST':
 		form = CustomUserCreationForm(request.POST)
 		if form.is_valid():
