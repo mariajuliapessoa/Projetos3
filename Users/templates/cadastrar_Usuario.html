@@ -9,3 +9,12 @@
 			<input type= "password" placeholder = "Digite sua senha..." name = "senha" class="form-control">
 			<input type= "submit" class="btn btn-sucess">
 {% endblock %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+#renderizar o formulario
+
+
