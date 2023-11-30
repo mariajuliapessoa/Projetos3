@@ -20,7 +20,7 @@ class Usuario(AbstractUserRole):
 
 class Gerente(AbstractUserRole):
     available_permissions = {
-        'armazenar_dados': True,
+    'armazenar_dados': True,
 	'armazenar_projetos': True,
 	'armazenar_voluntarios': True,
 	'armazenar_doacoes': True,
