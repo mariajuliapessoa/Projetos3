@@ -1,0 +1,39 @@
+/* Estilo geral para a barra de navegação */
+.navbar {
+    background-color: #5EC198; /* Substitua pela cor HEX desejada */
+    padding: 15px; /* Adapte conforme necessário */
+}
+
+/* Estilo para a lista não ordenada (ul) dentro da barra de navegação */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para os itens da lista (li) dentro da barra de navegação */
+.navbar li {
+    display: inline;
+    margin-right: 20px; /* Espaçamento entre os itens da navbar */
+}
+
+/* Estilo para os links (a) dentro da barra de navegação */
+.navbar a {
+    text-decoration: none;
+    color: black; /* Cor do texto dos links na navbar */
+    font-weight: bold;
+}
+
+/* Estilo para os links (a) ao passar o mouse sobre eles */
+.navbar a:hover {
+    color: #2C6DFC; /* Cor do texto ao passar o mouse sobre os links */
+}
+
+
+.footer{
+    margin: 0;
+    padding: 0;
+    background-color: #5EC198;
+    padding: 15px;
+    
+}

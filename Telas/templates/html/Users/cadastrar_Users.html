@@ -1,0 +1,22 @@
+
+{% extends 'html/padrao/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block content %}
+	<div class = "container">
+		<form action{% url 'cadastrar_Users'%} = "" method="POST">{%csrf_token %}
+			<label>Email</label>
+			<input type= "email" placeholder = "Digite seu e-mail..." name = "email" class="form-control">
+			<label>Senha</label>
+			<input type= "password" placeholder = "Digite sua senha..." name = "senha" class="form-control">
+			<input type= "submit" class="btn btn-sucess">
+{% endblock %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar</button>
+</form>
+#renderizar o formulario
+
+

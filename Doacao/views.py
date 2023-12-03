@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def doacao(request):
+    context = {}
+    return render(request, 'html/Doacao/doacao.html', context)

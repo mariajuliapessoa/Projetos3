@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def demanda(request):
+    context = {}
+    return render(request, 'html/Demanda/demanda.html', context)
