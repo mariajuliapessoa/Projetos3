@@ -1,0 +1,11 @@
+{% extends 'html/padrao/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+  <h2>{{ projeto.nomeProjeto }}</h2>
+  <p>Responsável: {{ projeto.responsavel }}</p>
+  <p>Descrição: {{ projeto.descricao }}</p>
+  <p>Contato: {{ projeto.contatoTelefone }}, {{ projeto.contatoEmail }}, {{ projeto.contatoRedeSociais }}</p>
+  <p>Demanda: {{ projeto.demanda }}</p>
+{% endblock %}

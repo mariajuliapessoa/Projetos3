@@ -4,7 +4,7 @@ from Users.views import home
 from Users.views import cadastrar_Users
 from Demanda.views import demanda
 from Doacao.views import doacao
-from Projeto.views import projetos
+from Projeto.views import projetos, detalhes_de_projeto
 from Relatorio.views import relatorios
 from Users.views import inicial
 from Users.views import login
@@ -19,5 +19,5 @@ urlpatterns = [
     path ('doacao/', doacao, name ="doacao"),
     path ('relatorios/', relatorios, name ="relatorios"),
     path ('login/', login, name ="login"),
-
+    path('detalhes_de_projeto/', detalhes_de_projeto, name="detalhes_de_projeto"),
 ]

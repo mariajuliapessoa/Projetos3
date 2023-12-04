@@ -5,5 +5,10 @@
 
 {% block title %}Página Inicial{% endblock %}
 {% block content %}
-<h1>Projetos</h1>
+    <h2>Lista de Projetos</h2>
+    <ul>
+        {% for projeto in projetos %}
+          <li><a href="{% url 'detalhes_de_projeto' projeto.idProjeto %}">{{ projeto.nomeProjeto }}</a></li>
+        {% endfor %}
+      </ul>
 {% endblock %}
